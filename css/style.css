@@ -69,7 +69,7 @@ header nav {
 
 /* container style */
 .container {
-  max-width: 550px;
+  max-width: 600px;
   min-height: 400px;
   position: relative;
   background-color: #f5eded;
@@ -93,12 +93,13 @@ form {
 form div {
   display: flex;
   align-items: center;
+  position: relative;
   gap: 0px 30px;
   width: 250px;
   height: 30px;
-  @media (max-width: 548px) {
+  @media (max-width: 550px) {
     flex-wrap: wrap;
-    width: 400px;
+    width: 90%;
   }
 }
 input {
@@ -121,9 +122,9 @@ label {
 .confirm {
   width: 100%;
   display: flex;
-  gap: 0px 10px;
+  gap: 0px 15px;
+  justify-content: center;
   @media (max-width: 548px) {
-    justify-content: center;
     gap: 15px;
     margin-bottom: 20px;
   }
@@ -142,30 +143,31 @@ label {
   color: #f5eded;
 }
 
-.option {
+.options {
   display: flex;
   justify-content: center;
   margin-top: 40px;
   position: relative;
   z-index: 1;
 }
-.option::before {
+.options::before {
   position: absolute;
   content: ' ';
-  width: 100vh;
+  width: 100vw;
   height: 1px;
   background-color: #1e201e;
   top: 13px;
   z-index: -1;
 }
 
-.option p {
+.options p {
   position: absolute;
   font-size: 20px;
   z-index: 10;
   padding: 0px 10px;
   z-index: 2;
   background-color: #f5eded;
+  border-radius: 15px;
 }
 .sign_in {
   margin-top: 40px;
@@ -234,9 +236,27 @@ label {
   display: inline-block;
   transform: translateY(-25px);
   transition: 0.5s;
+  color: #6482ad;
+}
+
+.label_style_2 {
+  display: block;
+  transform: translateY(-25px);
+  transition: 0.5s;
+  color: #6482ad;
+}
+
+.option_style {
+  background-color: #3c3d37;
   color: #ecdfcc;
 }
 
 .input_focus {
-  border-bottom: 1px solid #1e201e;
+  background-color: #6482ad4e;
+}
+
+.correct {
+  position: absolute;
+  right: 10px;
+  display: none;
 }
