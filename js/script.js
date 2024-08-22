@@ -8,7 +8,19 @@ const toggleBg = document.querySelector('span');
 const container = document.querySelector('.container');
 const label = document.querySelectorAll('label');
 const input = document.querySelectorAll('input');
+const userName = document.querySelectorAll('.name');
 const option = document.querySelector('.options p');
+const correct = document.querySelectorAll('.correct');
+const correctEmail = document.querySelector('.correct_email');
+const email = document.querySelector('.email');
+
+const emailEvent = (event) => {
+  if (event.key === '@') {
+    correctEmail.style.display = 'block';
+  } else {
+    correctEmail.style.display = 'none';
+  }
+};
 
 const themesAction = () => {
   logo.classList.toggle('nav_text_color');
@@ -23,6 +35,7 @@ const themesAction = () => {
 };
 
 themes.addEventListener('click', themesAction);
+email.addEventListener('keydown', emailEvent);
 
 for (let x = 0; x < label.length; x++) {
   input[x].addEventListener('focus', () => {
@@ -31,10 +44,16 @@ for (let x = 0; x < label.length; x++) {
       test.classList.remove('input_focus');
     }
     input[x].classList.add('input_focus');
-    label[x].classList.toggle('label_style');
+    label[x].classList.add('label_style');
   });
+}
 
-  input[x].addEventListener('blur', () => {
-    label[x].classList.toggle('label_style_2');
+for (let z = 0; z < userName.length; z++) {
+  userName[z].addEventListener('input', () => {
+    if (userName[z].value.trim() !== '') {
+      correct[z].style.display = 'block';
+    } else {
+      correct[z].style.display = 'none';
+    }
   });
 }

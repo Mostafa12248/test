@@ -110,6 +110,7 @@ input {
   outline: none;
   border-radius: 10px;
   padding: 0px 10px;
+  text-transform: capitalize;
 }
 
 label {
@@ -252,11 +253,25 @@ label {
 }
 
 .input_focus {
-  background-color: #6482ad4e;
+  /* background-color: #6482ad4e;
+   */
+  outline: 3px solid green;
+}
+
+.border_color {
+  border-bottom: solid 7px red;
 }
 
 .correct {
   position: absolute;
   right: 10px;
   display: none;
+  color: green;
+}
+
+.correct_email {
+  position: absolute;
+  right: 10px;
+  display: none;
+  color: green;
 }
