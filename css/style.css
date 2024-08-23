@@ -21,50 +21,42 @@ header nav {
 }
 
 .themes {
-  display: flex;
-  align-items: center;
-  gap: 0px 20px;
-}
-.themes p {
-  font-size: 20px;
-  @media (max-width: 550px) {
-    font-size: 15px;
-  }
-}
-
-.themes .switch {
-  background-color: white;
-  width: 65px;
-  height: 22px;
-  display: inline-block;
-  border-radius: 15px;
   position: relative;
+  background-color: green;
+  width: 70px;
+  height: 25px;
+  border-radius: 20px;
 }
 
-.themes .switch span {
+.themes .circle {
   position: absolute;
-  background-color: #6482ad;
-  width: 19px;
-  height: 19px;
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  display: block;
   border-radius: 50%;
-  top: 1.6px;
-  left: 2px;
-  z-index: 2;
+  left: 1px;
+  top: 0.5px;
+  opacity: 0.3;
 }
+
 .themes i {
   position: absolute;
-  font-size: 18px;
-  z-index: 1;
+  /* font-size: 20px; */
 }
 
 .light {
-  right: 4px;
-  top: 3px;
+  color: #f5eded;
+  top: 5px;
+  font-size: 16px;
+  left: 5px;
 }
 
 .dark {
-  left: 4px;
-  top: 3px;
+  color: black;
+  right: 5px;
+  top: 5px;
+  font-size: 18px;
 }
 
 /* container style */
@@ -219,14 +211,10 @@ label {
 .body_style {
   background-color: #3c3d37;
 }
+
 .container_style {
   border: 2px solid #ecdfcc;
   background-color: #3c3d37;
-}
-
-.toggle_style {
-  transform: translateX(42px);
-  transition: 0.5s ease;
 }
 
 .nav_text_color {
@@ -240,28 +228,18 @@ label {
   color: #6482ad;
 }
 
-.label_style_2 {
-  display: block;
-  transform: translateY(-25px);
-  transition: 0.5s;
-  color: #6482ad;
-}
-
 .option_style {
   background-color: #3c3d37;
   color: #ecdfcc;
 }
 
 .input_focus {
-  /* background-color: #6482ad4e;
-   */
-  outline: 3px solid green;
+  outline: 3px solid #1e201e;
 }
 
 .border_color {
-  border-bottom: solid 7px red;
+  border: solid 3px red;
 }
-
 .correct {
   position: absolute;
   right: 10px;
@@ -274,4 +252,16 @@ label {
   right: 10px;
   display: none;
   color: green;
+}
+
+.correctPass {
+  position: absolute;
+  right: 10px;
+  display: none;
+  color: green;
+}
+
+.toggle_style {
+  transform: translateX(45px);
+  transition: 0.5s;
 }

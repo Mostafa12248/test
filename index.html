@@ -20,12 +20,9 @@
           <p class="p">Logo</p>
         </div>
         <div class="themes">
-          <p>change Themes</p>
-          <div class="switch">
-            <span></span>
-            <i class="fa-solid fa-lightbulb dark"></i>
-            <i class="fa-regular fa-lightbulb light"></i>
-          </div>
+          <span class="circle"></span>
+          <i class="fa-solid fa-moon dark"></i>
+          <i class="fa-solid fa-sun light"></i>
         </div>
       </nav>
     </header>
@@ -33,12 +30,24 @@
       <form action="#">
         <div class="first_name">
           <label for="first">First</label>
-          <input id="first" type="text" class="name" maxlength="15" />
+          <input
+            id="first"
+            type="text"
+            class="name"
+            minlength="5"
+            maxlength="15"
+          />
           <span class="correct">✓</span>
         </div>
         <div class="last_name mame">
           <label for="last">last</label>
-          <input id="last" type="text" class="name" maxlength="15" />
+          <input
+            id="last"
+            type="text"
+            class="name"
+            minlength="5"
+            maxlength="15"
+          />
           <span class="correct">✓</span>
         </div>
 
@@ -49,8 +58,8 @@
         </div>
         <div class="password">
           <label for="pass">password</label>
-          <input id="pass" type="password" minlength="8" class="name" />
-          <span class="correct">✓</span>
+          <input id="pass" type="password" class="pass" />
+          <span class="correctPass">✓</span>
         </div>
         <div class="confirm">
           <input class="submit btn" type="submit" value="sign Up" />
@@ -58,7 +67,7 @@
         </div>
       </form>
       <div class="options">
-        <p>or</p>
+        <p>OR</p>
       </div>
 
       <div class="sign_in">
