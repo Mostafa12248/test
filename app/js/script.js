@@ -17,7 +17,7 @@ const pass = document.querySelector('.pass');
 const correctPass = document.querySelector('.correctPass');
 
 pass.addEventListener('input', () => {
-  if (pass.value >= '8') {
+  if (pass.value.length >= '8') {
     correctPass.style.display = 'block';
   } else {
     correctPass.style.display = 'none';
