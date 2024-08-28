@@ -9,6 +9,11 @@ export default [
       'no-console': 'warn',
       'no-unused-vars': 'warn',
       semi: 'error',
+      'no-undef': 'error',
+      'no-var': 'warn',
+      'no-shadow': 'error',
+      'no-param-reassign': 'error',
+      'no-multi-spaces': 'warn',
     },
   },
 ];
